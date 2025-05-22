@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using BasicWebPag.Models;
+using BasicWebPag.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BasicWebPag.Controllers
@@ -15,6 +16,13 @@ namespace BasicWebPag.Controllers
 
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Message"] = "New web MVC project";
+            ViewData["Owner"] = "Mariana G G Gravatá";
             return View();
         }
 

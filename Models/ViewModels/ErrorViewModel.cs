@@ -1,4 +1,4 @@
-namespace BasicWebPag.Models
+namespace BasicWebPag.Models.ViewModels
 {
     public class ErrorViewModel
     {
